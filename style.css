@@ -1,0 +1,328 @@
+/* Font Imports */
+@import url("https://fonts.googleapis.com/css2?family=League+Gothic&family=Open+Sans:wght@400;600&family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=League+Gothic&family=Open+Sans:wght@400;600&family=Roboto:wght@100&family=Smooch+Sans:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/* Custom Variables */
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --grey: #f1f1f1;
+}
+/*Resets Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navigation Bar */
+
+nav {
+  width: 100vw;
+  height: 3.7rem;
+  background-color: var(--white);
+  display: flex;
+  justify-content: space-between;
+  padding: 0.25rem;
+  box-shadow: 0px 5px 10px #888888;
+}
+li,
+a {
+  text-decoration: none;
+  list-style: none;
+  color: var(--black);
+}
+
+
+
+.logo { /* Logo on the top left */
+  width: 3.5rem;
+  height: 3rem;
+  border: solid 0.1rem black;
+  border-radius: 0.8rem;
+  z-index: 10;
+  background-color: var(--white);
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+#click:checked ~ ul {
+  left: 0%;
+}
+
+#click {
+  display: none;
+}
+nav .menu-bar i {
+  color: var(--black);
+  font-size: 2rem;
+  display: flex;
+  padding-top: 0.2rem;
+  display: none;
+  cursor: pointer;
+}
+
+nav .menu-bar {
+  z-index: 10;
+}
+
+nav ul li {
+  padding: 0.3rem;
+}
+
+nav ul li a {
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  color: black;
+  border-radius: 2rem;
+  padding: 0.5rem;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+nav ul li a:hover {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+@media (max-width: 500px) {
+  nav ul {
+    position: absolute;
+    flex-direction: column;
+    background-color: var(--grey);
+    height: 23rem;
+    width: 100vw;
+    top: 3.5rem;
+    padding-top: 1rem;
+    row-gap: 2.5rem;
+    left: -120%;
+    transition: all 0.4s ease;
+    box-shadow: 0px 5px 10px #888888;
+    z-index: 5;
+  }
+
+  nav .menu-bar i {
+    display: flex;
+  }
+}
+
+.active {
+  color: white;
+  background-color: black;
+}
+
+/* Base Element Styling */
+header {
+  /* Header */
+  text-align: center;
+  padding: 2rem;
+  display: block;
+  font-family: "League Gothic", sans-serif;
+  font-size: clamp(1.5rem, 1.5rem + 2.5vw, 3rem);
+}
+
+footer {
+  /* Footer */
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1%;
+}
+/* Homepage */
+.homepage {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  content: "";
+  background: url("Images/pexels-hasan-albari-1229861.jpg") center;
+  background-size: cover;
+  opacity: 0.9;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+}
+
+.homepage > h1 {
+  z-index: 1;
+  font-size: clamp(3rem, 2rem + 4vw, 8rem);
+  white-space: nowrap;
+}
+.homepage > p {
+  z-index: 1;
+  font-size: clamp(1.5rem, 1rem + 2vw, 4rem);
+}
+
+.home-contacts i {
+  width: 10rem;
+}
+
+/* About Me Page */
+
+.about-me-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-bottom: 8rem;
+}
+
+.about-me-content img {
+  width: min(2vw + 60%, 21rem);
+  padding-left: 1rem;
+  border-radius: 4rem;
+  margin-bottom: 1rem;
+}
+
+
+
+.about-me-content p {
+  padding: 2rem;
+  width: min(0.1vw + 60%, 34rem);
+  font-size: clamp(0.5rem, 0.5rem + 2vw, 1.5rem);
+  font-family: "Fira Sans", sans-serif;
+}
+
+/* About Me -> My experience with technology */
+
+.experience {
+  background-color: var(--grey);
+}
+
+.experience h2 {
+  text-align: center;
+  padding: 3rem;
+  font-family: "League Gothic", sans-serif;
+  display: block;
+  font-size: clamp(1.5rem, 1.5rem + 2.5vw, 3rem);
+}
+
+.experience-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-bottom: 1rem;
+}
+
+.experience-content img {
+  width: min(1vw + 60%, 21rem);
+  padding: 1rem;
+}
+
+
+.resume-img{ /* The image for my resume. This is attached to a <a> tag */
+  background: url("Images/Resume.png") no-repeat;
+  background-size: cover;
+  display: flex;
+  width: min(1vw + 100%, 21rem);
+  height: 27rem;
+}
+
+.experience-content p {
+  width: min(1vw + 60%, 34rem);
+  font-family: "Fira Sans", sans-serif;
+  font-size: clamp(0.5rem, 0.5rem + 2vw, 1.5rem);
+  padding: 1rem;
+}
+/* Projects */
+.main-projects{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 12rem;
+}
+
+.projects-links{
+  font-weight: bold;
+  margin-left: 15%;
+  margin-right: 25%;
+  text-decoration: underline;
+}
+
+
+
+/* Blogs */
+.main-blog {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card {
+  margin: 1.9rem;
+  position: relative;
+  transition: all 0.1s ease-in;
+  top: 0;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+  top: -0.5rem;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  width: 20rem;
+  position: relative;
+  top: 0.25rem;
+}
+
+.container {
+  background-color: var(--grey);
+  padding: 0.5rem;
+  bottom: 0.25rem;
+  height: auto;
+  width: 20rem;
+  font-size: clamp(0.5rem, 0.5rem + 2vw, 1.5rem);
+  text-transform: uppercase;
+  font-family: 'Bebas Neue', cursive;
+}
+
+
+
+.date-time{
+  padding: 0.3rem;
+  background-color: var(--grey);
+  text-align: center;
+}
+
+/* Contact Me */
+.contacts-info img {
+  width: 21rem;
+  border: 0.5rem solid black;
+  border-radius: 70%;
+}
+
+.contact-container p {
+  font-size: clamp(1.5rem, 1rem + 2vw, 4rem);
+  align-self: center;
+  font-family: "Bebas Neue", cursive;
+  padding: 1.5rem;
+  margin-left: 1.5rem;
+}
+
+.icons { /* Icons for Linkedin, Instagram, Github and Twitter */
+  display: flex;
+  justify-content: center;
+  gap: 12%;
+  font-size: 2.5rem;
+  padding: 2rem;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}

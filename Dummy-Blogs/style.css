@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --grey: #f1f1f1;
+}
+
+/*Resets Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navigation */
+
+nav {
+  width: 100vw;
+  height: 3.7rem;
+  background-color: var(--white);
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+  box-shadow: 0px 5px 10px #888888;
+}
+li,
+a {
+  text-decoration: none;
+  list-style: none;
+}
+
+.logo {
+  width: 3.5rem;
+  height: 3rem;
+  border: solid 0.1rem black;
+  border-radius: 0.8rem;
+  margin-left: 1.5rem;
+  z-index: 10;
+  background-color: var(--white);
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+#click:checked ~ ul {
+  left: 0%;
+}
+
+#click {
+  display: none;
+}
+nav .menu-bar i {
+  color: var(--black);
+  font-size: 2.5rem;
+  display: flex;
+  padding-top: 0.2rem;
+  display: none;
+  cursor: pointer;
+}
+
+nav .menu-bar {
+  z-index: 10;
+}
+
+nav ul li {
+  padding: 0.3rem;
+}
+
+nav ul li a {
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  color: black;
+  border-radius: 2rem;
+  padding: 0.5rem;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+nav ul li a:hover {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+@media (max-width: 450px) {
+  nav ul {
+    position: absolute;
+    flex-direction: column;
+    background-color: var(--grey);
+    height: 19rem;
+    width: 100vw;
+    top: 3.5rem;
+    padding-top: 1rem;
+    row-gap: 2.5rem;
+    left: -120%;
+    transition: all 0.4s ease;
+    box-shadow: 0px 5px 10px #888888;
+    z-index: 5;
+  }
+
+  nav .menu-bar i {
+    display: flex;
+  }
+}
+
+.active {
+  color: white;
+  background-color: black;
+}
+
+/* Dummy Blogs */
+.container{
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    flex-direction: column;
+    text-align: center;
+    width: min(1vw + 100%, 70rem);
+    margin: 0 auto;
+    background-color: var(--grey);
+    margin-top: 1.5rem;
+}
+
+.container h1{
+    font-family: 'Bebas Neue', cursive;
+}
+
+.container img{
+    width: min(1vw + 80%, 70rem);
+    margin: 0 auto;
+    padding: 1rem;
+}
