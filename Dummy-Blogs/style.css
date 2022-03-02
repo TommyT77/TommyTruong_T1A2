@@ -132,3 +132,11 @@ nav ul li a:hover {
     margin: 0 auto;
     padding: 1rem;
 }
+/* Footer */
+footer {
+  /* Footer */
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1%;
+}
