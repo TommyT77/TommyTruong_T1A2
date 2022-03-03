@@ -2,13 +2,14 @@
 @import url("https://fonts.googleapis.com/css2?family=League+Gothic&family=Open+Sans:wght@400;600&family=Roboto:wght@100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=League+Gothic&family=Open+Sans:wght@400;600&family=Roboto:wght@100&family=Smooch+Sans:wght@600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 
 /* Custom Variables */
 :root {
   --white: #ffffff;
   --black: #000000;
   --grey: #f1f1f1;
+  --blue: #2b56d4;
 }
 /*Resets Base */
 * {
@@ -16,6 +17,33 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body{
+  height: 100vh;
+}
+
+/* Base Element Styling */
+
+
+header {
+  /* Header */
+  text-align: center;
+  padding: 1rem;
+  display: block;
+  font-family: "League Gothic", sans-serif;
+  font-size: clamp(1.5rem, 1.5rem + 2.5vw, 3rem);
+}
+
+footer {
+  /* Footer */
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem;
+  position: sticky;
+  top: 95%;
+  gap: 1%;
+}
+
 
 /* Navigation Bar */
 
@@ -35,9 +63,8 @@ a {
   color: var(--black);
 }
 
-
-
-.logo { /* Logo on the top left */
+.logo {
+  /* Logo on the top left */
   width: 3.5rem;
   height: 3rem;
   border: solid 0.1rem black;
@@ -116,23 +143,7 @@ nav ul li a:hover {
   background-color: black;
 }
 
-/* Base Element Styling */
-header {
-  /* Header */
-  text-align: center;
-  padding: 1rem;
-  display: block;
-  font-family: "League Gothic", sans-serif;
-  font-size: clamp(1.5rem, 1.5rem + 2.5vw, 3rem);
-}
 
-footer {
-  /* Footer */
-  padding: 0.5rem;
-  display: flex;
-  justify-content: center;
-  gap: 1%;
-}
 /* Homepage */
 .homepage {
   position: relative;
@@ -183,8 +194,6 @@ footer {
   margin-bottom: 1rem;
 }
 
-
-
 .about-me-content p {
   padding: 0.1rem;
   width: min(0.1vw + 60%, 34rem);
@@ -219,8 +228,8 @@ footer {
   padding: 1rem;
 }
 
-
-.resume-img{ /* The image for my resume. This is attached to a <a> tag */
+.resume-img {
+  /* The image for my resume. This is attached to a <a> tag */
   background: url("Images/Resume.png") no-repeat;
   background-size: cover;
   display: flex;
@@ -235,22 +244,24 @@ footer {
   padding: 1rem;
 }
 /* Projects */
-.main-projects{
+.main-projects {
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  margin-bottom: 12rem;
 }
 
-.projects-links{
+
+.projects-links {
   font-weight: bold;
   margin-left: 15%;
-  margin-right: 25%;
+  margin-right: 15%;
   text-decoration: underline;
 }
 
-
+.projects-links:hover {
+  color: var(--blue);
+}
 
 /* Blogs */
 .main-blog {
@@ -287,12 +298,10 @@ footer {
   width: 20rem;
   font-size: clamp(0.5rem, 0.5rem + 2vw, 1.5rem);
   text-transform: uppercase;
-  font-family: 'Bebas Neue', cursive;
+  font-family: "Bebas Neue", cursive;
 }
 
-
-
-.date-time{
+.date-time {
   padding: 0.3rem;
   background-color: var(--grey);
   text-align: center;
@@ -313,7 +322,8 @@ footer {
   margin-left: 1.5rem;
 }
 
-.icons { /* Icons for Linkedin, Instagram, Github and Twitter */
+.icons {
+  /* Icons for Linkedin, Instagram, Github and Twitter */
   display: flex;
   justify-content: center;
   gap: 12%;
