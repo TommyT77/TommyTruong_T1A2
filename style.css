@@ -255,8 +255,8 @@ nav ul li a:hover {
 
 .projects-links {
   font-weight: bold;
-  margin-left: 15%;
-  margin-right: 15%;
+  display: flex;
+  justify-content: space-around;
   text-decoration: underline;
 }
 
