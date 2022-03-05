@@ -241,7 +241,7 @@ nav ul li a:hover {
   width: min(1vw + 60%, 34rem);
   font-family: "Fira Sans", sans-serif;
   font-size: clamp(0.5rem, 0.5rem + 2vw, 1.5rem);
-  padding: 1rem;
+  padding-bottom: 1rem;
 }
 /* Projects */
 .main-projects {
