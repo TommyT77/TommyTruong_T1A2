@@ -42,9 +42,32 @@ Created from Balsamiq Wireframes software
 ![Home Page Mock](docs/Home-page-mock.png)
 ![Home Page](docs/Home-page.png)
 
-### About Me
+### About Me:
 ![About Me Mock](docs/About-Me-Mock.png)
 ![About Me](docs/About-Me.png)
 
-### Projects
+### Projects:
+![Projects Mock](docs/Projects-Mock.png)
+![Projects](docs/Projects.png)
 
+### Blogs:
+![Blogs Mock](docs/Blogs-Mock.png)
+![Blogs](docs/Blogs.png)
+
+### Contact Me:
+![Contact Me Mock](docs/Contact-Me-Mock.png)
+![Contact Me](docs/Contact-Me.png)
+
+
+### Dummy Blogs:
+![Dummy Blogs Mock](docs/Dummy-Blogs-Mock.png)
+![Dummy Blogs](docs/Dummy-Blogs.png)
+
+---
+
+## Tech Stack
+* Sitemaps: Balsamiq Wireframes
+* Image Optimisation: Image Optimiser
+* Website: HTML & CSS3
+* IDE: Visual Code Studio
+* Deployment: Github Pages
