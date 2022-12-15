@@ -2,9 +2,9 @@
 
 ----
 
-[Link to portfolio website](https://asianboi11.github.io/TommyTruong_T1A2/index.html)
+[Link to portfolio website](https://tommyt77.github.io/TommyTruong_T1A2/)
 
-[Link to website repo](https://github.com/ASIANBOI11/TommyTruong_T1A2)
+[Link to website repo](https://github.com/TommyT77/TommyTruong_T1A2)
 
 ----
 
