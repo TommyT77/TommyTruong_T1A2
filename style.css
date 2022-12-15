@@ -230,7 +230,7 @@ nav ul li a:hover {
 
 .resume-img {
   /* The image for my resume. This is attached to a <a> tag */
-  background: url("Images/Resume.png") no-repeat;
+  background: url("Images/resume.jpg") no-repeat;
   background-size: cover;
   display: flex;
   width: min(1vw + 100%, 21rem);
